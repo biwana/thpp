@@ -201,10 +201,10 @@ template <> struct TensorOps<Tensor<real>> {
     return THTensor_(prod)(r, t, dim, 1);
   }
   static void _cumsum(THTensor* r, THTensor* t, int dim) {
-    return THTensor_(cumsum)(r, t, dim, 1);
+    return THTensor_(cumsum)(r, t, dim);
   }
   static void _cumprod(THTensor* r, THTensor* t, int dim) {
-    return THTensor_(cumprod)(r, t, dim, 1);
+    return THTensor_(cumprod)(r, t, dim);
   }
   static void _sign(THTensor* r, THTensor* t) {
     return THTensor_(sign)(r, t);
